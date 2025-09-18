@@ -1,0 +1,294 @@
+html {
+  font-size: 16px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  margin-bottom: 60px;
+  background-color: #ffff;
+  left: 0;
+  font-family: 'Merriweather', serif;
+}
+
+.GrutaImagen {
+  display: block;
+  margin: 2rem auto;
+  width: 325px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Botones y focus */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem rgb(209, 204, 204), 0 0 0 0.25rem #258cfb;
+}
+
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(300px * 14);
+  animation: scroll 20s linear infinite;
+}
+
+.slider-track img {
+  width: 300px;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2100px);
+  }
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  max-width: 1000px;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: #e2e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(126, 126, 126, 0.7);
+}
+
+.imagen {
+  width: 30%;
+  border-radius: 6px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.asd123,
+.qwerty123 {
+  width: 40%;
+  font-size: 1rem;
+  color: #111111;
+  line-height: 1.5;
+}
+
+.asd123 h2,
+.qwerty123 h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  border-left: 3px solid #000000;
+  padding-left: 0.5rem;
+}
+
+.qwerty123 {
+  margin-top: 14rem;
+}
+
+
+.ContenedorInv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #e2e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(126, 126, 126, 0.7);
+}
+
+.ImgRepre img{
+  width: 500px;
+  height: 415px; 
+  border-radius: 6px;
+  margin-left: 1rem;
+  object-fit: cover;   
+}
+
+
+
+.TxTwait h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-left: 2px solid #333;
+  padding-left: 0.5rem;
+  color: #222;
+}
+
+.RepresionASD {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.RepresionASD h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #333;
+  padding-left: 0.75rem;
+  color: #111;
+}
+
+.RepresionASD, 
+.RepresionASD h2 {
+  margin-top: 120px; 
+}
+
+/* Encabezado inferior */
+.header-top {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.header-top p {
+  font-size: 0.95rem;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.header-top .divider {
+  width: 60%;
+  height: 2px;
+  background-color: #000;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Contenedor final */
+.contenedorF {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  max-width: 1000px;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: #e2e0e0;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(126, 126, 126, 0.7);
+}
+
+.asd123F  {
+  width: 40%;
+  font-size: 1rem;
+  color: #111111;
+  line-height: 1.5;
+}
+
+.asd123F h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+  border-left: 3px solid #000000;
+  padding-left: 0.5rem;
+}
+
+.imagenFF {
+  width: 500px;
+  height: 450px;
+  border-radius: 6px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .GrutaImagen {
+    width: 90%;
+    height: auto;
+  }
+
+  .slider-track {
+    width: auto;
+    animation: scroll 15s linear infinite;
+  }
+  .slider-track img {
+    width: 200px;
+  }
+
+  .contenedor,
+  .ContenedorInv,
+  .contenedorF {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .imagen,
+  .imagenFF,
+  .ImgRepre img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 1rem 0;
+  }
+
+  .asd123,
+  .qwerty123,
+  .asd123F,
+  .TxTwait,
+  .RepresionASD {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+
+  .qwerty123 {
+    margin-top: 1rem;
+  }
+  .RepresionASD,
+  .RepresionASD h2 {
+    margin-top: 1rem;
+  }
+
+  .header-top .divider {
+    width: 80%;
+  }
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
